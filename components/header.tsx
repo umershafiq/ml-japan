@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Menu, X, Search } from "lucide-react"
+import Logo from "./logo"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -30,22 +31,8 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="h-20 flex items-center justify-between">
-          <Link
-            href="/"
-            className="text-2xl font-bold text-foreground flex items-center gap-2 hover:opacity-80 transition"
-            aria-label="ML Japan home"
-          >
-            <div
-              className="w-8 h-8 bg-accent rounded flex items-center justify-center text-white font-black text-xs"
-              aria-hidden="true"
-            >
-              ML
-            </div>
-            <span>
-              ML <span className="text-accent">JAPAN</span>
-            </span>
-          </Link>
+        <div className="h-24 flex items-center justify-between">
+          <Logo heightClass="h-12 sm:h-14 md:h-16 lg:h-20 xl:h-24" />
 
           <div className="hidden md:flex items-center gap-8">
             <Link href="#inventory" className="text-sm text-muted-foreground hover:text-accent transition font-medium">

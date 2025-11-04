@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Light theme with emerald green accent */
+  /* Light theme tuned to ML Japan logo (blue + red accent) */
   /* Light neutral backgrounds */
   --background: oklch(0.98 0.001 70);
   --foreground: oklch(0.2 0.01 250);
@@ -21,8 +21,8 @@
   --secondary: oklch(0.92 0.001 250);
   --secondary-foreground: oklch(0.2 0.01 250);
 
-  /* Accent - Emerald green for trust and reliability */
-  --accent: oklch(0.55 0.16 150);
+  /* Accent - vivid red to match logo swoosh */
+  --accent: oklch(0.62 0.22 27);
   --accent-foreground: oklch(1 0 0);
 
   --muted: oklch(0.7 0.02 250);
@@ -31,8 +31,8 @@
   --destructive-foreground: oklch(1 0 0);
   --border: oklch(0.9 0.001 250);
   --input: oklch(1 0 0);
-  --ring: oklch(0.55 0.16 150);
-  --chart-1: oklch(0.55 0.16 150);
+  --ring: oklch(0.62 0.22 27);
+  --chart-1: oklch(0.62 0.22 27);
   --chart-2: oklch(0.5 0.14 220);
   --chart-3: oklch(0.6 0.15 180);
   --chart-4: oklch(0.52 0.15 200);
@@ -40,12 +40,12 @@
   --radius: 0.75rem;
   --sidebar: oklch(0.98 0.001 70);
   --sidebar-foreground: oklch(0.2 0.01 250);
-  --sidebar-primary: oklch(0.55 0.16 150);
+  --sidebar-primary: oklch(0.62 0.22 27);
   --sidebar-primary-foreground: oklch(1 0 0);
   --sidebar-accent: oklch(0.92 0.001 250);
-  --sidebar-accent-foreground: oklch(0.55 0.16 150);
+  --sidebar-accent-foreground: oklch(0.62 0.22 27);
   --sidebar-border: oklch(0.9 0.001 250);
-  --sidebar-ring: oklch(0.55 0.16 150);
+  --sidebar-ring: oklch(0.62 0.22 27);
 }
 
 .dark {

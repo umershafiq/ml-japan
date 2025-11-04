@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react"
+import Logo from "./logo"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -10,15 +11,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 py-16">
           {/* Column 1 - Brand */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-foreground flex items-center gap-2">
-              <div
-                className="w-8 h-8 bg-accent rounded flex items-center justify-center text-white font-black text-xs"
-                aria-hidden="true"
-              >
-                ML
-              </div>
-              ML <span className="text-accent">JAPAN</span>
-            </h3>
+            <Logo className="!gap-3" heightClass="h-12 md:h-16" />
             <p className="text-muted-foreground text-sm leading-relaxed">
               Premium Japanese vehicles exported worldwide since 2010. Direct source, certified, and trusted by
               thousands.
